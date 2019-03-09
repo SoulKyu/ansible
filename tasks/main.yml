@@ -1,0 +1,16 @@
+---
+- name: System Provisioning
+  hosts: all
+  gather_facts: yes
+
+#  vars_files:
+#  - ../vars/main.yml
+#  - ../vars/ldap.yml
+
+#  handlers:
+#  - import_tasks: ../handlers/sshd.yml
+
+  tasks:
+  - name: test
+    command: ls
+  #- import_tasks: apt.yml

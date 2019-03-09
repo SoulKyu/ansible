@@ -1,0 +1,10 @@
+#- name: "[APT] update server"
+#  yum: name=* state=latest
+
+#- name: "[APT] Install EPEL-RELEASE"
+#  yum: 
+#    name: epel-release
+#    state: present
+
+- name: test
+  command: ls
