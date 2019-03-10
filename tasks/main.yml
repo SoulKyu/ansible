@@ -12,3 +12,6 @@
 
   tasks:
   - import_tasks: yum.yml
+  - import_tasks: packages.yml
+  - import_tasks: tmux.yml
+  - import_tasks: zsh.yml

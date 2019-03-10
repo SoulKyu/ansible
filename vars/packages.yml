@@ -1,0 +1,19 @@
+packages:
+  - vim
+  - git
+  - curl
+  - tree
+  - wget
+  - net-tools
+  - htop
+  - inxi
+  - tmux
+  - netcat
+  - snmpd
+  - ethtool
+  - kpartx
+  - parted
+  - zsh
+  - iotop
+  - wget
+  - unzip
