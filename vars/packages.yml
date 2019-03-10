@@ -25,3 +25,5 @@ packages:
   - httpd 
   - openssl 
   - mod_ssl
+  - php 
+  - php-mysql

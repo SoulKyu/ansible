@@ -7,8 +7,9 @@
   #- ../vars/main.yml
   #- ../vars/ldap.yml
 #
-  #handlers:
-  #- import_tasks: ../handlers/sshd.yml
+  handlers:
+  - import_tasks: ../handlers/mariadb.yml
+  - import_tasks: ../handlers/httpd.yml
 
   tasks:
   - import_tasks: yum.yml
@@ -17,6 +18,9 @@
   - import_tasks: zsh.yml
   - import_tasks: neofetch.yml
   - import_tasks: mariadb.yml
+  - import_tasks: httpd.yml
+  - import_tasks: php.yml
   - import_tasks: mysql.yml
   - import_tasks: get_wordpress.yml
+  - import_tasks: conf_wordpress.yml
 
