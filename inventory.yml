@@ -1,9 +1,10 @@
 all:
   children:
     web:
-      entreprise:
-        hosts:
-          web_01:
-            ansible_ssh_host: 52.47.173.228
-            vars:
-              test: true
+      children:
+        entreprise:
+          hosts:
+            web_01:
+              ansible_ssh_host: 52.47.173.228
+              vars:
+                test: true
