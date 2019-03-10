@@ -8,8 +8,9 @@ packages:
   - htop
   - inxi
   - tmux
-  - netcat
-  - snmpd
+  - nc
+  - net-snmp 
+  - net-snmp-utils
   - ethtool
   - kpartx
   - parted
@@ -17,3 +18,10 @@ packages:
   - iotop
   - wget
   - unzip
+  - php-gd
+  - mariadb 
+  - mariadb-server 
+  - mysql
+  - httpd 
+  - openssl 
+  - mod_ssl

@@ -1,0 +1,9 @@
+- include_vars: ../vars/mysql.yml
+
+- name: "[MYSQL] Create USER and Flush Privilege"
+  command: mysql -u root -e "CREATE DATABASE wordpress;"
+  tags: mysql
+
+- name: "[MYSQL] Create USER and Flush Privilege"
+  command: mysql -u root -e "GRANT ALL PRIVILEGES on wordpress.* to {{ user }}@localhost' identified by {{ password }}; FLUSH PRIVILEGES;"
+  tags: mysql

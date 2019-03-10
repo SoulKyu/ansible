@@ -5,6 +5,6 @@ all:
         entreprise:
           hosts:
             web_01:
-              ansible_ssh_host: 52.47.173.228
+              ansible_ssh_host: ec2-35-180-165-190.eu-west-3.compute.amazonaws.com
               vars:
                 test: true

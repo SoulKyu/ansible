@@ -2,7 +2,7 @@
   tags: packages
 
 - name: "[PACKAGE] Install requirements packages"
-  apt:
+  yum:
     name: "{{ packages }}"
     state: present
   tags: packages
