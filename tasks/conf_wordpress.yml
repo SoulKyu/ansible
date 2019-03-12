@@ -39,3 +39,10 @@
 - name: "[WORDPRESS] Edit access "
   command: sudo chmod -R 755 /var/www/html/wordpress/
   tags: wordpress
+  
+- name: "[WORDPRESS] Copy wp-config.php"
+  template:
+    src: ../templates/wp-config.php
+    dest: /var/www/html/wordpress/wp-config.php
+  tags:
+  - wordpress
