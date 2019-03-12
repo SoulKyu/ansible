@@ -46,3 +46,8 @@
     dest: /var/www/html/wordpress/wp-config.php
   tags:
   - wordpress
+
+- name: "[WORDPRESS] Change documentroot"
+  command: sed -i 's\DocumentRoot "/var/www/html/"\DocumentRoot "/var/www/html/wordpress/"\g' httpd.conf
+  ignore_error: yes
+  tags: wordpress
